@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/gear/public_html/
-    - /bin/cp -R * $DEPLOYPATH
-    - /bin/cp -R .* $DEPLOYPATH 2>/dev/null || true
+    - /bin/cp -R -f * $DEPLOYPATH
+    - /bin/cp -R -f .* $DEPLOYPATH 2>/dev/null || true
