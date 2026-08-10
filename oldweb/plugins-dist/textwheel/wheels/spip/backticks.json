@@ -1,0 +1,63 @@
+{
+  "bt-echappe-tags": {
+    "match": ",</?[a-z!][^<>]*?[`][^<>]*>,imsS",
+    "if_chars": "<`",
+    "priority": -20,
+    "is_wheel": "Y",
+    "replace": {
+      "bt-echappe-tags-sub": {
+        "match": [
+          "`"
+        ],
+        "replace": [
+          "\u0001\u0015"
+        ],
+        "type": "str"
+      }
+    }
+  },
+  "bt-echappe-backticks": {
+    "if_str": "\\`",
+    "priority": -20,
+    "match": [
+      "\\\\",
+      "\\`"
+    ],
+    "replace": [
+      "\u0001\u0010",
+      "\u0001\u0015"
+    ],
+    "type": "str"
+  },
+  "bt-backticks-triples": {
+    "match": "@(?<!`)(```)([^`]|[^`].*?[^`])(```)($|[^`])@imsS",
+    "if_str": "```",
+    "is_callback": "Y",
+    "replace": "replace_backticks"
+  },
+  "bt-backticks-doubles": {
+    "match": "@(?<!`)(``)([^`]|[^`].*?[^`])(``)($|[^`])@imsS",
+    "if_str": "``",
+    "is_callback": "Y",
+    "replace": "replace_backticks"
+  },
+  "bt-backticks-simples": {
+    "match": "@(?<!`)(`)([^`]|[^`].*?[^`])(`)($|[^`])@imsS",
+    "if_str": "`",
+    "is_callback": "Y",
+    "replace": "replace_backticks"
+  },
+
+  "bt-restaure-tags": {
+    "if_chars": "\u0001",
+    "match": [
+      "\u0001\u0010",
+      "\u0001\u0015"
+    ],
+    "replace": [
+      "\\",
+      "`"
+    ],
+    "type": "str"
+  }
+}

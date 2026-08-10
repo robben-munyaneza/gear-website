@@ -1,0 +1,11 @@
+# Don't push large backup zips
+*.zip
+
+# Don't push temp restore folders
+_restore_temp/
+
+# Don't push server error logs
+error_log
+
+# Don't push the incorrect .htaccess we created
+.htaccess

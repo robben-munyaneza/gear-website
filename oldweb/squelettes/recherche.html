@@ -1,0 +1,117 @@
+<INCLURE(includes/header)>
+    <!--Breadcrumb Section Start-->
+    <div class="breadcrumb-section section bg-image pt-75 pb-75 pt-sm-55 pb-sm-55 pt-xs-45 pb-xs-45" data-bg="[(#CHEMIN{assets/images/bg/title-bar-bg.jpg})]">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="breadcrumb-title">
+                        <h2>Blog list</h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="page-breadcrumb">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="#">Search</a></li>
+                        <li>[(#RECHERCHE)]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Breadcrumb Section End-->    
+    <!--Blog List section start-->
+    <div class="blog-list-section section bg-gray  pt-100 pt-lg-80 pt-md-70 pt-sm-60 pt-xs-50 pb-60 pb-lg-40 pb-md-30 pb-sm-60 pb-xs-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 order-lg-2 order-2">
+                    <div class="common-sidebar-widget sidebar-widget-two">
+                        <h2 class="sidebar-title">Search</h2>
+                        <div class="sidebar-search-form">
+                            <form method="GET" action="spip.php">
+                                <input type="hidden" name="page" value="recherche"/>
+                                <input type="text" name="recherche" placeholder="Search...">
+                                <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
+                            </form> 
+                        </div>
+                    </div>
+                    <div class="common-sidebar-widget sidebar-widget-two">
+                        <h2 class="sidebar-title">Latest News</h2>
+                        <BOUCLE_news(ARTICLES){id_rubrique=7}{par date}{inverse}{0,5}>
+                            <div class="sidebar-blog">
+                                <a href="#URL_ARTICLE" class="image"><img src="[(#LOGO_ARTICLE|image_reduire{80,80}|image_recadre{80,80}|extraire_attribut{src})]" alt=""></a>
+                                <div class="content">
+                                    <h5><a href="#URL_ARTICLE">#TITRE</a></h5>
+                                    <span>#DATE</span>
+                                </div>
+                            </div>
+                        </BOUCLE_news>
+                    </div>
+                    <div class="common-sidebar-widget sidebar-widget-two">
+                        <h2 class="sidebar-title">Categories</h2>
+                        <ul class="sidebar-list sidebar-list-two">                            
+                            <li><a href="spip.php?rubrique7">News</a></li>                            
+                        </ul>
+                    </div>
+                    <div class="common-sidebar-widget sidebar-widget-two">
+                        <h2 class="sidebar-title">Tags</h2>
+                        <ul class="sidebar-tag">
+                            <li><a href="#">News ,</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8 order-lg-1 order-1">
+                    <div class="row">                        
+                        <div class="col-12">
+                            <!--Single Blog List Start-->
+                            <B_articles>                                
+                                <BOUCLE_articles(ARTICLES) {recherche} {!par points}>
+                                    <div class="blog-list">
+                                        <div class="row align-items-center">
+                                            <div class="col-md-6">
+                                                <div class="blog-image">
+                                                    <a href="#URL_ARTICLE"><img src="[(#LOGO_ARTICLE|image_reduire{370,246}|image_recadre{370|248}|extraire_attribut{src})]" alt=""></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="blog-content">
+                                                   <h2><a href="#URL_ARTICLE">#TITRE</a></h2>
+                                                   <ul class="meta">
+                                                        <li><i class="fa fa-clock-o"></i>#DATE</li>
+                                                        <li><i class="fa fa-folder-open"></i><a href="#">Article</a></li>
+                                                    </ul>
+                                                    <p>[(#TEXTE|couper{200})]</p>
+                                                    <a class="read-more-btn" href="#URL_ARTICLE">Read more <i class="fa fa-chevron-right"></i></a>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>                                                                        
+                                </BOUCLE_articles>                                
+                            </B_articles>
+                                <h1>No Results found</h1>
+                            <//B_articles>
+                            <!--Single Blog List Start-->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <!--Pagination Start-->
+                            <div class="page-pagination">
+                                <ul class="text-end">
+                                    <li class="active"><a href="#">1</a></li>
+                                    <!--
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
+                                    -->
+                                </ul>
+                            </div>
+                            <!--Pagination End-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Blog List section end-->
+<INCLURE(includes/footer)>

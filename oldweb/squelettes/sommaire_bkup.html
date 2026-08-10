@@ -1,0 +1,525 @@
+<INCLURE(includes/header)>    
+    <!--slider section start-->
+    <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="portfolio-slide" data-source="gallery" style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+        <!-- START REVOLUTION SLIDER 5.4.7 auto mode -->
+	    <div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.7">
+            <ul>	
+                <!-- SLIDE  -->
+                <BOUCLE_slider(ARTICLES){id_rubrique=1}{par date}{inverse}>
+                    <li data-index="rs-#ID_ARTICLE" data-transition="boxslide" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                        <!-- MAIN IMAGE -->
+                        <img src="[(#LOGO_ARTICLE|extraire_attribut{src})]"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                        <!-- LAYERS -->
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+                            id="slide-#ID_ARTICLE-layer-6" 
+                            data-x="['left','left','left','left']" data-hoffset="['371','149','102','61']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['8','5','5','2']" 
+                            data-width="['570','570','570','359']"
+                            data-height="['250','250','250','320']"
+                            data-whitespace="nowrap"            
+                            data-type="shape" 
+                            data-responsive_offset="on" 
+                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            style="z-index: 5;background-color:rgba(255,255,255,0.9);border-radius:6px 6px 6px 6px;"> 
+                        </div>
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme  secondary-background-color-important" 
+                            id="slide-#ID_ARTICLE-layer-7" 
+                            data-x="['center','center','center','center']" data-hoffset="['-64','162','240','136']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['133','128','127','159']" 
+                            data-width="90"
+                            data-height="60"
+                            data-whitespace="nowrap"
+                            data-type="shape" 
+                            data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            style="z-index: 6;background-color:rgb(0,0,0);border-radius:6px 6px 6px 6px;"> 
+                        </div>
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption   tp-resizeme" 
+                            id="slide-#ID_ARTICLE-layer-8" 
+                            data-x="['center','center','center','center']" data-hoffset="['-64','162','238','134']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['133','128','127','159']" 
+                            data-width="none"
+                            data-height="none"
+                            data-whitespace="nowrap"            
+                            data-type="text" 
+                            data-responsive_offset="on" 
+                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            style="z-index: 7; white-space: nowrap; font-size: 24px; line-height: 24px; font-weight: 700; color: #ffffff; letter-spacing: 0px;font-family:Roboto Condensed;">#COMPTEUR_BOUCLE/#TOTAL_BOUCLE 
+                        </div>
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption rev-btn   secondary-background-color-hover-important" 
+                            id="slide-#ID_ARTICLE-layer-1" 
+                            data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                            data-width="none"
+                            data-height="none"
+                            data-whitespace="nowrap"            
+                            data-type="button" 
+                            data-actions='[{"event":"click","action":"jumptoslide","slide":"previous","delay":""}]'
+                            data-responsive_offset="on" 
+                            data-responsive="off"
+                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(30,102,239,0.75);bs:solid;bw:0 0 0 0;"}]'
+                            data-textAlign="['center','center','center','center']"
+                            data-paddingtop="[35,35,35,35]"
+                            data-paddingright="[20,20,20,20]"
+                            data-paddingbottom="[35,35,35,35]"
+                            data-paddingleft="[10,10,10,10]"
+                            style="z-index: 8; white-space: nowrap; font-size: 14px; line-height: 14px; font-weight: 700; color: rgba(255,255,255,1); font-family:Roboto;background-color:rgba(0,0,0,0.75);border-color:rgba(0,0,0,1);border-radius:0px 5px 5px 0px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><i class="fa fa-chevron-left"></i> 
+                        </div>
+                        <!-- LAYER NR. 5 -->
+                        <div class="tp-caption rev-btn   secondary-background-color-hover-important custom-nav" 
+                            id="slide-#ID_ARTICLE-layer-2" 
+                            data-x="['right','right','right','right']" data-hoffset="['0','0','0','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['5','5','5','5']" 
+                            data-width="none"
+                            data-height="none"
+                            data-whitespace="nowrap"            
+                            data-type="button" 
+                            data-actions='[{"event":"click","action":"jumptoslide","slide":"next","delay":""}]'
+                            data-responsive_offset="on" 
+                            data-responsive="off"
+                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(30,102,239,0.75);bs:solid;bw:0 0 0 0;"}]'
+                            data-textAlign="['center','center','center','center']"
+                            data-paddingtop="[35,35,35,35]"
+                            data-paddingright="[20,20,20,20]"
+                            data-paddingbottom="[35,35,35,35]"
+                            data-paddingleft="[10,10,10,10]"
+                            style="z-index: 9; white-space: nowrap; font-size: 14px; line-height: 14px; font-weight: 700; color: rgba(255,255,255,1); font-family:Roboto;background-color:rgba(0,0,0,0.75);border-color:rgba(0,0,0,1);border-radius:5px 0px 0px 5px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><i class="fa fa-chevron-right"></i> 
+                        </div>
+                        <!-- LAYER NR. 6 -->
+                        <div class="tp-caption   tp-resizeme  primary-color-important" 
+                            id="slide-#ID_ARTICLE-layer-3" 
+                            data-x="['left','left','left','left']" data-hoffset="['411','189','142','101']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-22','-25','-25','-28']" 
+                            data-width="['none','none','none','300']"
+                            data-height="none"
+                            data-whitespace="['nowrap','nowrap','nowrap','normal']"            
+                            data-type="text" 
+                            data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"
+                            style="z-index: 10; white-space: nowrap; font-size: 36px; line-height: 40px; font-weight: 700; color: #000000; letter-spacing: 0px;font-family:Roboto Condensed;">#TITRE
+                        </div>
+                        <!-- LAYER NR. 7 -->
+                        <div class="tp-caption   tp-resizeme  secondary-color-important" 
+                            id="slide-#ID_ARTICLE-layer-4" 
+                            data-x="['left','left','left','left']" data-hoffset="['411','189','142','101']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-56','-59','-59','-92']" 
+                            data-width="none"
+                            data-height="none"
+                            data-whitespace="nowrap"            
+                            data-type="text" 
+                            data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']"
+                            data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]"
+                            data-paddingleft="[0,0,0,0]"    
+                            style="z-index: 11; white-space: nowrap; font-size: 15px; line-height: 15px; font-weight: 700; color: #1E66EF; letter-spacing: 0px;font-family:Roboto Condensed;">gear
+                        </div>
+                        <!-- LAYER NR. 8 -->
+                        <a class="tp-caption tm-button-rv-primary rev-btn  tp-resizeme  primary-background-color-hover-important secondary-background-color-important" href="#URL_ARTICLE" 
+                            id="slide-#ID_ARTICLE-layer-5" 
+                            data-x="['left','left','left','left']" data-hoffset="['411','189','142','101']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['56','53','53','80']" 
+                            data-width="none"
+                            data-height="none"
+                            data-whitespace="nowrap"            
+                            data-type="button" 
+                            data-responsive_offset="on"
+    
+                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']"
+                            data-paddingtop="[21,21,21,21]"
+                            data-paddingright="[40,40,40,40]"
+                            data-paddingbottom="[21,21,21,21]"
+                            data-paddingleft="[40,40,40,40]"
+                            style="z-index: 12; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">View project 
+                        </a>
+                    </li>
+                </BOUCLE_slider>                
+                <!-- SLIDE  -->                
+            </ul>
+            <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	
+        </div>
+    </div>
+    <!--slider section end-->    
+    <!--About section start-->
+    <div class="about-section section pt-100 pt-lg-80 pt-md-70 pt-sm-55 pt-xs-40 pb-80 pb-lg-60 pb-md-5 pb-sm-60 pb-xs-50">
+        <div class="container">
+            <div class="row">               
+               <div class="col-lg-6">
+                   <div class="row">
+                       <div class="col-12">
+                           <div class="section-title text-start blue-color mb-30 mb-md-15 mb-md-10 mb-sm-10 mb-xs-0">
+                                <span>About us</span>
+                                <h1>Leading in building and civil architecture & construction.</h1>
+                            </div>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-md-6 col-sm-6">
+                            <div class="feature">
+                                <div class="feature-inner blue-color">
+                                    <div class="icon"><i class="pe-7s-home"></i></div>
+                                    <div class="content">
+                                        <h3>Civil architecture</h3>
+                                        <p>We design a wide range of building types that excel at their function and high-quality.</p>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="col-md-6 col-sm-6">
+                           <div class="feature">
+                                <div class="feature-inner blue-color">
+                                    <div class="icon"><i class="pe-7s-paint"></i></div>
+                                    <div class="content">
+                                        <h3>Renovation work</h3>
+                                        <p>Renovations involve figuring out the resolution to existing buildings and offices' issues.</p>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="col-md-6 col-sm-6">
+                            <div class="feature">
+                                <div class="feature-inner blue-color">
+                                    <div class="icon"><i class="pe-7s-home"></i></div>
+                                    <div class="content">
+                                        <h3>Interior design</h3>
+                                        <p>We offer groundbreaking projects, innovative new products, and real-time design.</p>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="col-md-6 col-sm-6">
+                           <div class="feature">
+                                <div class="feature-inner blue-color">
+                                    <div class="icon"><i class="pe-7s-paint"></i></div>
+                                    <div class="content">
+                                        <h3>Landscape strategies</h3>
+                                        <p>It's our mission to create elegant and functional landscape design solutions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+               </div>                
+               <div class="col-lg-6">
+                   <div class="about-thumb">
+                       <img src="[(#CHEMIN{assets/images/about/Home4-intro.jpg})]" alt="">
+                   </div>
+               </div>                
+            </div>
+        </div>
+    </div>
+    <!--About section end-->    
+    <!--Funfact section start-->
+    <div class="funfact-section section">
+        <div class="container">
+            <div class="row">                
+                <div class="col-12">
+                    <div class="funfact-wrap funfact-wrap-4">
+                        <div class="row">
+                            <div class="single-fact col-md-3 col-sm-6 col-12 mb-30">
+                                <h1><span class="counter">1256</span></h1>
+                                <h4>Project completed</h4>
+                            </div>
+                            <div class="single-fact col-md-3 col-sm-6 col-12 mb-30">
+                                <h1>+<span class="counter">1000</span></h1>
+                                <h4>Happy clients</h4>
+                            </div>
+                            <div class="single-fact col-md-3 col-sm-6 col-12 mb-30">
+                                <h1><span class="counter">615</span></h1>
+                                <h4>Worker employed</h4>
+                            </div>
+                            <div class="single-fact col-md-3 col-sm-6 col-12 mb-30">
+                                <h1><span class="counter">32</span></h1>
+                                <h4>Awards won</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <!--Funfact section end-->    
+    <!--Conebrick Parallax Section start-->
+    <div class="conebrick-parallax-section conebrick-parallax-section-4 section bg-gray bg-image" data-bg="[(#CHEMIN{assets/images/bg/parallaxbg1.jpg})]">
+        <div class="container">
+            <div class="row">                
+                <div class="col-12">
+                    <div class="parallax-content">
+                        <div class="parallax-title">
+                            <h3>Provide you the highest quality work that meets your expectation.</h3>
+                        </div>
+                        <div class="video-popup" id="video-gallery">
+                            <a class="item" href="https://www.youtube.com/watch?v=uSLteWiqYRo"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <!--Conebrick Parallax Section End-->    
+    <!--Testimonial section start-->
+    <div class="testimonial-section section bg-gray-two pt-95 pt-lg-75 pt-md-65 pt-sm-55 pt-xs-45 pb-80 pb-lg-60 pb-md-50 pb-sm-40 pb-xs-50">
+        <div class="container">          
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center blue-color mb-30 mb-md-15 mb-md-10 mb-sm-10 mb-xs-0">
+                        <span>Testimonials</span>
+                        <h1>What clients say about us</h1>
+                    </div>
+                </div>
+            </div>   
+            <div class="row align-items-center">
+                <div class="col-lg-12">                   
+                    <div class="testimonial-slider-content-3 section">
+                        <div class="testimonial">
+                            <div class="testimonial-inner blue-color">
+                                <div class="testimonial-description">
+                                    <p>“gear's service is unbelievable, I can trust in them 100% because of this professional team's attitude”</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-thumb">
+                                        <img src="[(#CHEMIN{assets/images/author/author-1.jpg})]" alt="">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Frankie Kao</h4>
+                                        <span>CEO, Burton LTS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-inner blue-color">
+                                <div class="testimonial-description">
+                                    <p>“I have searched for a month to choose a company for renovating my house, and, I found gear. Nice choice!”</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-thumb">
+                                        <img src="[(#CHEMIN{assets/images/author/author-2.jpg})]" alt="">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Dean Casie</h4>
+                                        <span>Corp Inc, Marketer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-inner blue-color">
+                                <div class="testimonial-description">
+                                    <p>“I'm in love with this team. They give us all solutions for any issue I've met. They are so patient with customers' problems”</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-thumb">
+                                        <img src="[(#CHEMIN{assets/images/author/author-3.jpg})]" alt="">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Blanche Fields</h4>
+                                        <span>BTA ltd, Maketing</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-inner blue-color">
+                                <div class="testimonial-description">
+                                    <p>“I don't have much experiences with construction case. Fortunately, I found gear. Highly recommend.”</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-thumb">
+                                        <img src="[(#CHEMIN{assets/images/author/author-4.jpg})]" alt="">
+                                    </div>
+                                    <div class="author-info">
+                                        <h4>Emma Wilson</h4>
+                                        <span>LBA ltd Marketing</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>            
+        </div>
+    </div>
+    <!--Testimonial section end-->    
+    <!--Brand section start-->
+    <div class="brand-section section pt-100 pt-lg-80 pt-md-70 pt-sm-60 pt-xs-50 pb-100 pb-lg-80 pb-md-70 pb-sm-60 pb-xs-50">
+        <div class="container">
+            <div class="row">
+                
+                <!--Brand Slider start-->
+                <div class="brand-slider section">
+                    <div class="brand col"><img src="[(#CHEMIN{assets/images/brands/brand-1.png})]" alt=""></div>
+                    <div class="brand col"><img src="[(#CHEMIN{assets/images/brands/brand-2.png})]" alt=""></div>
+                    <div class="brand col"><img src="[(#CHEMIN{assets/images/brands/brand-3.png})]" alt=""></div>
+                    <div class="brand col"><img src="[(#CHEMIN{assets/images/brands/brand-4.png})]" alt=""></div>
+                    <div class="brand col"><img src="[(#CHEMIN{assets/images/brands/brand-5.png})]" alt=""></div>
+                    <div class="brand col"><img src="[(#CHEMIN{assets/images/brands/brand-6.png})]" alt=""></div>
+                    <div class="brand col"><img src="[(#CHEMIN{assets/images/brands/brand-1.png})]" alt=""></div>
+                    <div class="brand col"><img src="[(#CHEMIN{assets/images/brands/brand-2.png})]" alt=""></div>
+                    <div class="brand col"><img src="[(#CHEMIN{assets/images/brands/brand-3.png})]" alt=""></div>
+                    <div class="brand col"><img src="[(#CHEMIN{assets/images/brands/brand-4.png})]" alt=""></div>
+                    <div class="brand col"><img src="[(#CHEMIN{assets/images/brands/brand-5.png})]" alt=""></div>
+                    <div class="brand col"><img src="[(#CHEMIN{assets/images/brands/brand-6.png})]" alt=""></div>
+                </div>
+                <!--Brand Slider end-->
+                
+            </div>
+        </div>
+    </div>
+    <!--Brand section end-->
+    
+    <!--Faq and Blog section start-->
+    <div class="faq-blog-section section bg-dark pt-75 pt-lg-55 pt-md-45 pt-sm-35 pt-xs-30 pb-100 pb-lg-80 pb-md-60 pb-sm-60 pb-xs-50">
+        <div class="container">
+           
+            <div class="row">
+              
+               <div class="col-lg-6">
+                   <div class="faq-wrap">
+                       <div class="section-title text-start color-white mb-10">
+                            <h1>Quick Q&A</h1>
+                       </div>
+                       <!--FAQ Accordin Start-->
+                        <div class="faq-accordion">
+                            <div id="accordion">
+                              <div class="card actives">
+                                <div class="card-header" id="headingOne">
+                                  <h5 class="mb-0">
+                                    <a class="" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Why should clients choose you
+                                    </a>
+                                  </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                                  <div class="card-body">
+                                    We are the most professional people you will meet. All our engeeneers would bend over backwards to help all our customers. We offer huge range of tradesmen of which are all qualified and insured. We have 100% feedback on all sites we offer work to.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                  <h5 class="mb-0">
+                                    <a class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Which areas of construction do you cover
+                                    </a>
+                                  </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                                  <div class="card-body">
+                                    We cover all aspects of building works from ground works to roofing, 
+                                    refurbishments & extensions, interior and exterior works carried out. We also cover all aspects of building work with our dedicated building division team. All our landscape services are undertaken both commercially and domestically.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingThree">
+                                  <h5 class="mb-0">
+                                    <a class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      How do you manage construction quality
+                                    </a>
+                                  </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                                  <div class="card-body">
+                                    The system for managing quality should encompass the organizational structure, procedures, processes, and resources, as well as activities to ensure confidence that the API will meet its intended specifications for quality and purity. All quality-related activities should be defined and documented.
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <!--FAQ Accordin Start-->
+                   </div>
+               </div> 
+               
+               <div class="col-lg-6">
+                   <div class="home-blog-wrap blog-style-4">
+                       <div class="section-title text-start color-white mb-10">
+                            <h1>Recent news</h1>
+                       </div>
+                       <div class="all-blog-list">
+                           <!--Single Home Blog Start-->
+                           <BOUCLE_news(ARTICLES){id_rubrique=7}{par date}{inverse}{0,3}>
+                                <div class="single-home-blog home-blog-4">
+                                    <div class="blog-img">
+                                        <a href="#URL_ARTICLE"><img src="[(#LOGO_ARTICLE|image_reduire{100,66}||image_recadre{100,66}|extraire_attribut{src})]" alt=""></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <h2><a href="#URL_ARTICLE">#TITRE</a></h2>
+                                        <ul class="meta">
+                                            <li><i class="fa fa-clock-o"></i>#DATE</li>
+                                            <li><i class="fa fa-folder-open"></i><a href="#">News</a></li>
+                                        </ul>
+                                    </div>
+                                </div> 
+                           </BOUCLE_news>                           
+                           <!--Single Home Blog End--> 
+                           <a href="#" class="read-more-btn">Latest news <i class="fa fa-chevron-right"></i></a>
+                       </div>
+                   </div>
+               </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <!--Faq and Blog section end-->
+    
+    <!--Visit Section start-->
+    <div class="visit-section section-space section bg-gray pt-100 pt-lg-80 pt-md-70 pt-sm-60 pt-xs-50 pb-100 pb-lg-80 pb-md-70 pb-sm-60 pb-xs-50">
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <div class="col-lg-6">
+                    <div class="map-area">
+                        <div class="ht-gmp4" id="htmap">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15949.903517538181!2d30.01207305234574!3d-1.963435536562857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca5b21743b88d%3A0xafd301e9a8fcdef0!2sKigali!5e0!3m2!1sen!2srw!4v1683495433175!5m2!1sen!2srw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="visit-area blue-color">
+                        <h3>Visit us</h3>
+                        <p>You are invited to come and visit our company to get an on-site review of our work.</p>
+                        <ul>
+                            <li><i class="fa fa-map-marker"></i><span>Main Office Kigali, RW</span></li>
+                            <li><i class="fa fa-envelope-o"></i><span>info@gear.rw</span></li>
+                            <li><i class="fa fa-phone-square"></i><span>(+250) 788305067</span></li>
+                        </ul>
+                        <a href="spip.php?rubrique4" class="btn blue-color">Get In Touch</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--Visit Section End-->    
+    <!--Footer section start-->
+<INCLURE(includes/footer)>
