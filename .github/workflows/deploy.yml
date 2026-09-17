@@ -29,4 +29,5 @@ jobs:
             **/*.zip
             **/_restore_temp/**
             **/error_log
-            **/.htaccess
+            intranet/.htaccess
+            intranet.gear.rw/.htaccess
